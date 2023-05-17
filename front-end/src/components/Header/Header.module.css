@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  justify-content: space-between !important;
+  place-items: center;
+  place-content: center;
+  text-align: center;
+  border: 1px solid red;
+  width: 100%;
+  height: 8vh !important;
+  position: relative;
+}
+.logo_div {
+  display: flex;
+}
+.logo_div_txt {
+  text-align: left;
+  font-family: "Noto Sans Nandinagari", sans-serif;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: #081836;
+}
+.SearchInputContainer {
+  width: 15vw;
+  display: flex;
+  text-align: center;
+  place-items: center;
+  place-content: center;
+  height: 5.8vh !important;
+  background: #f6f8fd;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+.SearchInput {
+  height: 80% !important;
+  width: 80%;
+  padding-left: 10px;
+  font-family: "Noto Sans Nandinagari", sans-serif;
+  border: none;
+  background: inherit;
+  font-size: 16px;
+  color: #999999c9;
+}
+.SearchInput:focus {
+  outline: none;
+  border: none;
+}
+.SearchInput::placeholder {
+  font-family: "Noto Sans Nandinagari", sans-serif;
+  font-size: 16px;
+  color: #999999c9;
+}
