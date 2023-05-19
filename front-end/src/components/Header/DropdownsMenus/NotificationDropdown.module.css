@@ -3,7 +3,7 @@
   transform: translateX(-92%);
   flex-direction: column;
   width: 22vw;
-  height: 300px;
+  height: 310px;
   padding: 15px;
   cursor: pointer;
   overflow-y: auto;
@@ -17,16 +17,24 @@
 .conatinerStyle::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0);
 }
+.conatinerStyle .singelNotification:first-child{
+  border-bottom: 1px solid #00000014;
+}
+.conatinerStyle .singelNotification:nth-child(2){
+  border-bottom: 1px solid #00000014;
+}
 .active {
   composes: conatinerStyle;
   opacity: 1;
   transition: opacity 0.3s ease;
 }
-
 .inactive {
   composes: conatinerStyle;
   opacity: 0;
   transition: opacity 0.3s ease;
+}
+.fadded{
+  opacity: 0.5;
 }
 .singelNotification {
   display: flex;

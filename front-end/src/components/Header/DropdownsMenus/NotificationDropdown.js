@@ -6,12 +6,15 @@ import { ReactComponent as NotificationIcon } from "../../../assets/Header/bell1
 const notifications = [
   {
     time: "12:08 PM",
+    fadded: false,
   },
   {
     time: "23/01/2023",
+    fadded: true,
   },
   {
     time: "23/01/2023",
+    fadded: true,
   },
 ];
 
@@ -20,10 +23,14 @@ export default function NotificationDropdown({ active, notificationClicked }) {
     ? NotificationDropdownStyle.active
     : NotificationDropdownStyle.inactive;
   return (
-    <div onClick={()=>notificationClicked()} className={containerClass}>
+    <div onClick={() => notificationClicked()} className={containerClass}>
       {notifications.map((not) => {
         return (
-          <div className={NotificationDropdownStyle.singelNotification}>
+          <div
+            className={`${NotificationDropdownStyle.singelNotification} ${
+              not.fadded ? NotificationDropdownStyle.fadded : ""
+            }`}
+          >
             <div className={NotificationDropdownStyle.left}>
               <NotificationIcon
                 style={{
