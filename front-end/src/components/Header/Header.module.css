@@ -6,7 +6,7 @@
   text-align: center;
   border: 1px solid red;
   width: 100%;
-  height: 8vh !important;
+  height: 10vh;
   position: relative;
 }
 .logo_div {
@@ -25,13 +25,12 @@
   text-align: center;
   place-items: center;
   place-content: center;
-  height: 5.8vh !important;
+  height: 7vh;
   background: #f6f8fd;
   border-radius: 15px;
-  margin-right: 20px;
 }
 .SearchInput {
-  height: 80% !important;
+  height: 82% ;
   width: 80%;
   padding-left: 10px;
   font-family: "Noto Sans Nandinagari", sans-serif;
@@ -48,4 +47,66 @@
   font-family: "Noto Sans Nandinagari", sans-serif;
   font-size: 16px;
   color: #999999c9;
+}
+.SearchInputIcon {
+  fill: #1785C6;
+  stroke: #1785C6;
+  cursor: pointer;
+  stroke-width: 1.3;
+  filter: drop-shadow(0px 5px 5px #1785c64d);
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 200px;
+  width: 25vw;
+}
+.planetEarthContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f6f8fd;
+  width: 3.5vw;
+  height: 7vh;
+  border-radius: 15px;
+}
+.planetEarthIcon:hover {
+  cursor: pointer;
+}
+.planetEarthContainerFullView {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.notificationFullView{
+  composes: planetEarthContainerFullView;
+  position: relative;
+
+}
+.notificationContainer{
+  composes: planetEarthContainer;
+  position: relative;
+
+}
+.redDotStyle{
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: none;
+  background: #FB082C;
+  top: 31%;
+  left:55%;
+}
+.redDotActive{
+  composes: redDotStyle;
+  opacity: 1;
+  transition: opacity ease .3s;
+}
+.redDotInactive{
+  composes: redDotStyle;
+  opacity: 0;
+  transition: opacity ease .3s;
 }
