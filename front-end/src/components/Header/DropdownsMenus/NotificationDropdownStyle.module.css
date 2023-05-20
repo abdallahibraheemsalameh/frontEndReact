@@ -23,15 +23,16 @@
 .conatinerStyle .singelNotification:nth-child(2){
   border-bottom: 1px solid #00000014;
 }
-.active {
-  composes: conatinerStyle;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
+
 .inactive {
   composes: conatinerStyle;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  opacity: 0 !important;
+  transition: all 0.3s ease !important;
+}
+.active {
+  composes: conatinerStyle;
+  opacity: 1 !important;
+  transition: all 0.3s ease !important;
 }
 .fadded{
   opacity: 0.5;
