@@ -19,4 +19,52 @@
   /* border: 1px solid red; */
   padding: 1.5% 1% 1% 2%;
 }
-
+.settingsDivContiner{
+    /* border: 1px solid red; */
+    width: 95%;
+    height: 11%;
+    background-image: url("../../assets/Body/settingswide.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 6% auto 0px auto;
+    position: relative;
+    /* padding-top: 5%; */
+  }
+  .settingsImg{
+    /* border: 1px solid red; */
+    width: 30%;
+    height: 125%;
+    position: absolute;
+    top: -25%;
+    left: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+    z-index: 123;
+    color: white;    
+  }
+  .settingsDescription{
+    color:white;
+    /* border: 1px solid red; */
+    height: 50%;
+    width: 45%;
+    position: absolute;
+    top: 50%;
+    left:5%;
+    transform: translateY(-50%);
+  }
+  .settingsDescription h3{
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .settingsDescription h6{
+    font-size: 16px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    color: #ffffff9f;
+    /* font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 1px; */
+  }

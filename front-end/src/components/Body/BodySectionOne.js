@@ -1,6 +1,6 @@
 import React from "react";
 import bodySectionOneStyle from "./BodySectionOneStyle.module.css";
-
+import ChartsSection from "./ChartsSection"
 import { ReactComponent as SquareMenu } from "../../assets/Body/squareMenu.svg";
 import { ReactComponent as HamburgerMenu } from "../../assets/Body/hamMenu.svg";
 import SmartVehicle from "./SmartVehicle";
@@ -29,24 +29,20 @@ export default function BodySectionOne() {
         </div>
         {/* ------------------------------- */}
         <div className={bodySectionOneStyle.SmartVehiclesList}>
-        <SmartVehicle dotColor="#F9B317" />
-        <SmartVehicle dotColor="#00AB80" />
-        <SmartVehicle dotColor="#00AB80" />
-        <SmartVehicle dotColor="#F9B317" />
-        <SmartVehicle dotColor="#E63438" />
-        <SmartVehicle dotColor="#00AB80" />
-        <SmartVehicle dotColor="#00AB80" />
-        <SmartVehicle dotColor="#F9B317" />
-        <SmartVehicle dotColor="#E63438" />
-        <SmartVehicle dotColor="#00AB80" />
-        <SmartVehicle dotColor="#00AB80" />
+          <SmartVehicle dotColor="#F9B317" />
+          <SmartVehicle dotColor="#00AB80" />
+          <SmartVehicle dotColor="#00AB80" />
+          <SmartVehicle dotColor="#F9B317" />
+          <SmartVehicle dotColor="#E63438" />
+          <SmartVehicle dotColor="#00AB80" />
+          <SmartVehicle dotColor="#00AB80" />
+          <SmartVehicle dotColor="#F9B317" />
+          <SmartVehicle dotColor="#E63438" />
+          <SmartVehicle dotColor="#00AB80" />
+          <SmartVehicle dotColor="#00AB80" />
         </div>
-
-
-    
       </div>
-
-      <div className={bodySectionOneStyle.chartsContainer}></div>
+      <ChartsSection/>
     </section>
   );
 }
