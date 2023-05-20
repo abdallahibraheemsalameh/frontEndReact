@@ -6,4 +6,18 @@
 html{
   font-family: "Noto Sans Nandinagari", sans-serif;
   font-size: 16px;
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+  width: 1px;
+}
+html::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0);
+}
+.App{
+  display: flex;
+  flex-direction: column;
 }
