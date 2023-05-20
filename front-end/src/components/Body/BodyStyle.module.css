@@ -4,3 +4,19 @@
   width: 100vw;
   height: 100vh;
 }
+.bodySectionsContainer{
+  /* border: 5px solid red; */
+      display: flex;
+      flex-direction: column;
+      height: 200%;
+      width: 85vw;
+      /* justify-content: space-between; */
+      background: #E7F0F9;
+      border-top-left-radius: 30px;
+      /* padding-top: 3% ; */
+}
+.bodySectionsContainer h4{
+  /* border: 1px solid red; */
+  padding: 1.5% 1% 1% 2%;
+}
+
