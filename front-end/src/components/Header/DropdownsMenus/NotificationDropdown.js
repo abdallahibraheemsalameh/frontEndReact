@@ -1,5 +1,5 @@
 import React from "react";
-import NotificationDropdownStyle from "./NotificationDropdown.module.css";
+import NotificationDropdownStyle from "./NotificationDropdownStyle.module.css";
 import { ReactComponent as YellowPlus } from "../../../assets/Header/yellowPlus.svg";
 import { ReactComponent as NotificationIcon } from "../../../assets/Header/bell1.svg";
 
@@ -21,9 +21,9 @@ const notifications = [
 export default function NotificationDropdown({ active, notificationClicked }) {
   const containerClass = active
     ? NotificationDropdownStyle.active
-    : NotificationDropdownStyle.inactive;
+    : '';
   return (
-    <div onClick={() => notificationClicked()} className={containerClass}>
+    <div onClick={() => notificationClicked()} className={`${NotificationDropdownStyle.inactive} ${containerClass}` }>
       {notifications.map((not) => {
         return (
           <div

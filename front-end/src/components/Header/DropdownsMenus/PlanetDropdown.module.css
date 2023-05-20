@@ -15,13 +15,13 @@
 }
 .inactive {
   composes: conatinerStyle;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  opacity: 0 !important;
+  transition: opacity 0.3s ease !important;
 }
 .active{
   composes: conatinerStyle;
-  opacity: 1;
-  transition: opacity 0.3s ease;
+  opacity: 1 !important;
+  transition: opacity 0.3s ease !important;
 }
 .contentDiv {
   display: flex;

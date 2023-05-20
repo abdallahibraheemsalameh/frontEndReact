@@ -7,7 +7,7 @@ import { ReactComponent as NotificationIcon } from "../../assets/Header/bell1.sv
 import { useState } from "react";
 import PlanetDropdown from "./DropdownsMenus/PlanetDropdown";
 import NotificationDropdown from "./DropdownsMenus/NotificationDropdown";
-
+import ProfileDropdown from "./DropdownsMenus/ProfileDropdown";
 export default function Header() {
   const [showPlanetDropDown, setShowPlanetDropDown] = useState(false);
   const [shownotificationsDropDown, setShownotificationsDropDown] =
@@ -48,7 +48,7 @@ export default function Header() {
               height="30"
             />
           </div>
-          <PlanetDropdown active={showPlanetDropDown} />
+          {showPlanetDropDown && <PlanetDropdown active={showPlanetDropDown} />}
         </div>
         {/* ---------------bell--------------- */}
         <div className={headerStyle.notificationFullView}>
@@ -70,8 +70,16 @@ export default function Header() {
               }
             ></div>
           </div>
-          <NotificationDropdown active={shownotificationsDropDown} notificationClicked={()=>setShownotificationsDropDown(!shownotificationsDropDown)} />
+          {shownotificationsDropDown && (
+            <NotificationDropdown
+              active={shownotificationsDropDown}
+              notificationClicked={() =>
+                setShownotificationsDropDown(!shownotificationsDropDown)
+              }
+            />
+          )}
         </div>
+        <ProfileDropdown/>
       </div>
     </div>
   );
