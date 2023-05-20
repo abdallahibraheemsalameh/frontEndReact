@@ -1,0 +1,126 @@
+.conatinerStyle {
+  composes: conatinerStyle from "./PlanetDropdown.module.css";
+  transform: translateX(-92%);
+  flex-direction: column;
+  width: 22vw;
+  height: 310px;
+  padding: 15px;
+  cursor: pointer;
+  overflow-y: auto;
+}
+.conatinerStyle::-webkit-scrollbar {
+  width: 1px;
+}
+.conatinerStyle::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.conatinerStyle::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0);
+}
+.conatinerStyle .singelNotification:first-child{
+  border-bottom: 1px solid #00000014;
+}
+.conatinerStyle .singelNotification:nth-child(2){
+  border-bottom: 1px solid #00000014;
+}
+
+.inactive {
+  composes: conatinerStyle;
+  opacity: 0 !important;
+  transition: all 0.3s ease !important;
+}
+.active {
+  composes: conatinerStyle;
+  opacity: 1 !important;
+  transition: all 0.3s ease !important;
+}
+.fadded{
+  opacity: 0.5;
+}
+.singelNotification {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  padding: 2.5% 0px;
+  place-content: center;
+  place-items: center;
+}
+
+.left {
+  composes: planetEarthContainer from "../Header.module.css";
+  width: 23%;
+  height: 85%;
+  position: relative;
+}
+.yellowPlus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2%;
+  width: 95%;
+}
+.middle div:first-child {
+  font-weight: bold;
+  font-size: 18px;
+  color: #0c1834;
+  text-align: left;
+}
+.middle div:last-child {
+  font-size: 14px;
+  text-align: left;
+  color: #65769c;
+  opacity: 0.8;
+  width: 80%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+  width: 20%;
+  height: 100%;
+}
+.right div:first-child {
+  font-size: 10px;
+  color: #65769c;
+}
+
+.showText {
+  display: flex;
+}
+.showText div:first-child {
+  font-size: 12px;
+  color: #5a89d8;
+  text-decoration: underline;
+}
+
+.showText div:last-child {
+  font-size: 13px;
+  color: #5a89d8;
+}
+.seeAll {
+  font-size: 12px;
+  color: #5a89d8;
+  text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  .singelNotification {
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    width: 80%;
+    height: 85%;
+    position: relative;
+  }
+}
