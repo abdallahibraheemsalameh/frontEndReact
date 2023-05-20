@@ -1,0 +1,106 @@
+
+.navigationContainer {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 15vw;
+    justify-content: space-between;
+    /* padding-top: 3% ; */
+  }
+  .navigation {
+    /* border: 1px solid burlywood; */
+    display: flex;
+    flex-direction: column;
+    height: 45%;
+    width: 100%;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 20%;
+    padding-left: 5%;
+  }
+  
+  .navigationItem {
+    display: flex;
+    /* border: 1px solid brown; */
+    width: 80%;
+    align-items: center;
+    text-align: center;
+  }
+  .navigationText {
+    font-size: 16px;
+    font-weight: bold;
+    color: #6d7485;
+    margin-left: 8%;
+  }
+  .navigationTextActive {
+    color: #1785c6;
+  }
+  .navigationItem:hover .navigationText {
+    color: #1785c6;
+  }
+  .navigationItem:hover .navigationIcon {
+    fill: #1785c6 !important;
+  }
+  
+  .helpBox {
+    height: 30%;
+    /* border: 1px solid slategray; */
+    width: 90%;
+    margin: 0 auto;
+    background-image: url("../../assets/Navigations/box.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+  }
+  .questionMarkContainer {
+    /* border: 1px solid red; */
+    width: 35%;
+    height: 22%;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+    z-index: 123;
+    color: white;
+  }
+  .helpBoxContant {
+    color: white;
+    height: 50%;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+      align-items: center;
+  }
+  .description{
+      line-height:10px;
+      /* border: 1px solid red; */
+      text-align: center;
+      font-size: 12px;
+      margin-top: 10% ;
+      color: #ffffff8e;
+  }
+  .DiscoverBtn{
+      /* border: 1px solid red; */
+      margin-top: 15%;
+      width: 65%;
+      height: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 3%;
+      border-radius: 15px;
+      font-weight: bold;
+      box-shadow: 0px 10px 15px #00000033;
+      background: #F8B319;
+      cursor: pointer;
+  }
