@@ -110,3 +110,11 @@ width: 85%;
 .cardsText{
     color: #6D7485;
 }
+@media screen and (max-width: 768px) {
+    .chartsContainer {
+      width: 100%;
+      margin-top: 5%;
+      height: 50%;
+      border: 1px solid #1785C6;
+    }
+  }

@@ -26,7 +26,7 @@
     background-image: url("../../assets/Body/settingswide.png");
     background-repeat: no-repeat;
     background-position: center center;
-    margin: 6% auto 0px auto;
+    margin: 3% auto 0px auto;
     position: relative;
     /* padding-top: 5%; */
   }
@@ -67,4 +67,10 @@
     /* font-size: 36px;
     font-weight: 400;
     letter-spacing: 1px; */
+  }
+  @media screen and (max-width: 768px) {
+    .bodySectionsContainer {
+      height: 400%;
+      flex-direction: column;
+    }
   }
