@@ -12,6 +12,7 @@
   border-bottom-right-radius: 15px;
   background: #ffffff;
   box-shadow: 0px 8px 30px #083F5F3D;
+  z-index: 100;
 }
 .inactive {
   composes: conatinerStyle;

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="32" viewBox="0 0 38 32">
+  <defs>
+    <filter id="Line_34056" x="0" y="0" width="38" height="17" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-color="#1785c6" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Line_34057" x="0.148" y="7.665" width="34.742" height="17" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-2"/>
+      <feFlood flood-color="#1785c6" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Line_34058" x="0" y="15" width="27" height="17" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-3"/>
+      <feFlood flood-color="#1785c6" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_79024" data-name="Group 79024" transform="translate(7.373 3.61)">
+    <g id="Group_79022" data-name="Group 79022" transform="translate(0 0)">
+      <g transform="matrix(1, 0, 0, 1, -7.37, -3.61)" filter="url(#Line_34056)">
+        <line id="Line_34056-2" data-name="Line 34056" x2="23" transform="translate(7.5 3.5)" fill="none" stroke="#1785c6" stroke-width="2"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -7.37, -3.61)" filter="url(#Line_34057)">
+        <line id="Line_34057-2" data-name="Line 34057" x2="19.742" transform="translate(7.65 11.16)" fill="none" stroke="#1785c6" stroke-width="2"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -7.37, -3.61)" filter="url(#Line_34058)">
+        <line id="Line_34058-2" data-name="Line 34058" x2="12" transform="translate(7.5 18.5)" fill="none" stroke="#1785c6" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

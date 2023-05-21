@@ -65,6 +65,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  z-index: 100;
 }
 .dropDown {
   position: absolute;
