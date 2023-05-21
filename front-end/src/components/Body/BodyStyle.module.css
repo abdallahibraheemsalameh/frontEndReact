@@ -3,6 +3,7 @@
   width: 100vw;
   height: 100vh;
   margin-top: 5%;
+  transition: all 0.5s ease-in-out;
 }
 .bodySectionsContainer {
   display: flex;
@@ -57,9 +58,15 @@
   letter-spacing: 1px;
   color: #ffffff9f;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .bodyContainer {
     margin-top: 8%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bodyContainer {
+    margin-top: 10%;
   }
 }
 
