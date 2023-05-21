@@ -64,7 +64,7 @@ export default function NavigationSection() {
       active: false,
     },
   ];
-  
+
   return (
     <div className={navigationStyle.navigationContainer}>
       <div className={navigationStyle.navigation}>
@@ -83,8 +83,7 @@ export default function NavigationSection() {
           );
         })}
       </div>
-      {/* ---help box */}
-
+      
       <div className={navigationStyle.helpBox}>
         <div className={navigationStyle.questionMarkContainer}>
           <img src={QuestionMarkImg} alt="Question Mark"></img>

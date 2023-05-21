@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import smartVehicleStyle from "./SmartVehicleStyle.module.css";
-
 import { ReactComponent as SmartVehicleSVG } from "../../assets/Body/smartVehicle.svg";
 import { ReactComponent as ArrowUp } from "../../assets/Body/arrowUp.svg";
 import { ReactComponent as Camera } from "../../assets/Body/camera.svg";
@@ -9,7 +8,7 @@ import { ReactComponent as Network } from "../../assets/Body/network.svg";
 import { ReactComponent as Memory } from "../../assets/Body/memory.svg";
 import { ReactComponent as Temp } from "../../assets/Body/temp.svg";
 
-export default function SmartVehicle({dotColor}) {
+export default function SmartVehicle({ dotColor }) {
   const [showVehicleDetails, setShowVehicleDetails] = useState(false);
   const details = [
     {
@@ -105,9 +104,6 @@ export default function SmartVehicle({dotColor}) {
           })}
         </div>
       </div>
-      {/* {showVehicleDetails && (
-
-    )} */}
     </div>
   );
 }

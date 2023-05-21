@@ -128,6 +128,6 @@ export default function ChartsSection() {
           </div>
         );
       })}
- </div>
+    </div>
   );
 }

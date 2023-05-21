@@ -17,10 +17,10 @@
 .conatinerStyle::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0);
 }
-.conatinerStyle .singelNotification:first-child{
+.conatinerStyle .singelNotification:first-child {
   border-bottom: 1px solid #00000014;
 }
-.conatinerStyle .singelNotification:nth-child(2){
+.conatinerStyle .singelNotification:nth-child(2) {
   border-bottom: 1px solid #00000014;
 }
 
@@ -34,7 +34,7 @@
   opacity: 1 !important;
   transition: all 0.3s ease !important;
 }
-.fadded{
+.fadded {
   opacity: 0.5;
 }
 .singelNotification {
