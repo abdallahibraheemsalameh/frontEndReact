@@ -3,21 +3,33 @@ import headerStyle from "./Header.module.css";
 import { ReactComponent as SearchIcon } from "../../assets/Header/icons8-search.svg";
 import { ReactComponent as PlanetEarthIcon } from "../../assets/Header/planet-earth.svg";
 import { ReactComponent as NotificationIcon } from "../../assets/Header/bell1.svg";
+import { ReactComponent as HamburgerMenu } from "../../assets/Header/hamburgerMenu.svg";
 import logoImg from "../../assets/Header/logo.png";
 import { useState } from "react";
 import PlanetDropdown from "./DropdownsMenus/PlanetDropdown";
 import NotificationDropdown from "./DropdownsMenus/NotificationDropdown";
 import ProfileDropdown from "./DropdownsMenus/ProfileDropdown";
-export default function Header() {
+export default function Header({ showResponsiveNavProp }) {
   const [showPlanetDropDown, setShowPlanetDropDown] = useState(false);
   const [shownotificationsDropDown, setShownotificationsDropDown] =
     useState(false);
   return (
     <div className={headerStyle.container}>
+      <div className={headerStyle.hamburgerMenu}>
+        <HamburgerMenu
+          onClick={() => showResponsiveNavProp()}
+          width="30"
+          height="30"
+        />
+      </div>
       {/* ---------------Logo--------------- */}
       <div className={headerStyle.logo_div}>
         <span className={headerStyle.logo_div_image}>
-          <img style={{height:"100%", width:"80%"}} src={logoImg} alt="logoImage"></img>
+          <img
+            className={headerStyle.logoImage}
+            src={logoImg}
+            alt="logoImage"
+          ></img>
         </span>
         <span className={headerStyle.logo_div_txt}>Logo</span>
       </div>

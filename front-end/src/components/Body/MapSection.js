@@ -47,29 +47,22 @@ export default function MapSection() {
 
   const Btns = [
     {
-        text:"Cancel",
-        backgroud:"#ffffff",
-        borderColor:"#F9B317",
-        textColor:"#FFAF00"
+      text: "Cancel",
+      backgroud: "#ffffff",
+      borderColor: "#F9B317",
+      textColor: "#FFAF00",
     },
     {
-        text:"Save",
-        backgroud:"#FFAB00",
-        borderColor:"#F9B317",
-        textColor:"#FFFFFF"
-    }
-  ]
+      text: "Save",
+      backgroud: "#FFAB00",
+      borderColor: "#F9B317",
+      textColor: "#FFFFFF",
+    },
+  ];
   return (
     <div className={MapSectionStyle.Container}>
       <h3>Trip Route</h3>
       <div className={MapSectionStyle.map}>
-        <LoadScript googleMapsApiKey="AIzaSyDipY_wM8CX-bKGO6fi-5XuDfK1fWg5Jz8">
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={center}
-        zoom={19}
-      />
-    </LoadScript>
         <div className={MapSectionStyle.dialog}>
           <div
             className={`${MapSectionStyle.row1} ${MapSectionStyle.bottomBorder}`}
@@ -133,31 +126,35 @@ export default function MapSection() {
             })}
           </div>
           <div className={MapSectionStyle.row5}>
-            {
-                Btns.map((btn,index)=>{
-                    return(
-                        <div
-                        key={index}
-                        style={{
-                          width: "45%",
-                          border: `1px solid ${btn.borderColor}`,
-                          background:`${btn.backgroud}`,
-                          height: "75%",
-                          borderRadius: "15px",
-                          color:`${btn.textColor}`,
-                          display:"flex",
-                          justifyContent:"center",
-                          alignItems:"center"
-                        }}
-                      >
-                        <p>{btn.text}</p>
-                      </div>
-                    )
-                })
-            }
-
+            {Btns.map((btn, index) => {
+              return (
+                <div
+                  key={index}
+                  style={{
+                    width: "45%",
+                    border: `1px solid ${btn.borderColor}`,
+                    background: `${btn.backgroud}`,
+                    height: "75%",
+                    borderRadius: "15px",
+                    color: `${btn.textColor}`,
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <p>{btn.text}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
+        <LoadScript googleMapsApiKey="AIzaSyDipY_wM8CX-bKGO6fi-5XuDfK1fWg5Jz8">
+          <GoogleMap
+            mapContainerStyle={containerStyle}
+            center={center}
+            zoom={19}
+          />
+        </LoadScript>
       </div>
     </div>
   );

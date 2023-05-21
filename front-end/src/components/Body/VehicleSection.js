@@ -1,6 +1,6 @@
 import React from "react";
 import VehicleSectionStyle from "./VehicleSectionStyle.module.css";
-import ChartsSection from "./ChartsSection"
+import ChartsSection from "./ChartsSection";
 import { ReactComponent as SquareMenu } from "../../assets/Body/squareMenu.svg";
 import { ReactComponent as HamburgerMenu } from "../../assets/Body/hamMenu.svg";
 import SmartVehicle from "./SmartVehicle";
@@ -27,7 +27,7 @@ export default function VehicleSection() {
             </div>
           </div>
         </div>
-        {/* ------------------------------- */}
+
         <div className={VehicleSectionStyle.SmartVehiclesList}>
           <SmartVehicle dotColor="#F9B317" />
           <SmartVehicle dotColor="#00AB80" />
@@ -42,7 +42,7 @@ export default function VehicleSection() {
           <SmartVehicle dotColor="#00AB80" />
         </div>
       </div>
-      <ChartsSection/>
+      <ChartsSection />
     </section>
   );
 }

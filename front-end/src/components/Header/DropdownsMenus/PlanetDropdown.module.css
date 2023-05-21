@@ -1,4 +1,4 @@
-.conatinerStyle{
+.conatinerStyle {
   position: absolute;
   top: 100%;
   left: 50%;
@@ -11,7 +11,7 @@
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   background: #ffffff;
-  box-shadow: 0px 8px 30px #083F5F3D;
+  box-shadow: 0px 8px 30px #083f5f3d;
   z-index: 100;
 }
 .inactive {
@@ -19,7 +19,7 @@
   opacity: 0 !important;
   transition: opacity 0.3s ease !important;
 }
-.active{
+.active {
   composes: conatinerStyle;
   opacity: 1 !important;
   transition: opacity 0.3s ease !important;
@@ -32,7 +32,6 @@
   justify-content: space-evenly;
   height: 80%;
   width: 80%;
-  /* border: 1px solid black; */
 }
 .contentDiv div {
   display: flex;

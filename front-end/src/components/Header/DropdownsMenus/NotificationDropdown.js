@@ -19,11 +19,12 @@ const notifications = [
 ];
 
 export default function NotificationDropdown({ active, notificationClicked }) {
-  const containerClass = active
-    ? NotificationDropdownStyle.active
-    : '';
+  const containerClass = active ? NotificationDropdownStyle.active : "";
   return (
-    <div onClick={() => notificationClicked()} className={`${NotificationDropdownStyle.inactive} ${containerClass}` }>
+    <div
+      onClick={() => notificationClicked()}
+      className={`${NotificationDropdownStyle.inactive} ${containerClass}`}
+    >
       {notifications.map((not) => {
         return (
           <div

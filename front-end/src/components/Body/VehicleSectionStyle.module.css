@@ -1,12 +1,10 @@
 .VehicleSection {
-  /* border: 2px solid red; */
   width: 100%;
   height: 41%;
   padding: 0px 2% 1% 2%;
   display: flex;
 }
 .vParkContainer {
-  /* border: 2px solid red; */
   width: 50%;
   height: 100%;
   display: flex;
@@ -17,14 +15,12 @@
 }
 
 .vParkContainerHeader {
-  /* border: 1px solid red; */
   padding-bottom: 2%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .vParkContainerHeaderIcons {
-  /* border: 1px solid#E7F0F9; */
   width: 17%;
   display: flex;
   justify-content: space-evenly;
@@ -42,9 +38,9 @@
 .HamburgerMenu {
   composes: SquareMenu;
 }
-.SmartVehiclesList{
-height: 100%;
-overflow-y: auto;
+.SmartVehiclesList {
+  height: 100%;
+  overflow-y: auto;
 }
 .SmartVehiclesList::-webkit-scrollbar {
   width: 1px;
@@ -57,13 +53,17 @@ overflow-y: auto;
 }
 @media screen and (max-width: 768px) {
   .VehicleSection {
-    height:200vh;
+    height: 200vh;
     flex-direction: column;
     padding-bottom: 0px;
   }
   .vParkContainer {
     width: 100%;
     height: 40%;
-/* border: 1px solid red;  */
- }
+  }
+}
+@media (max-width: 700px) {
+  .VehicleSection {
+    width: 100vw;
+  }
 }

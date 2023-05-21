@@ -1,9 +1,9 @@
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-html{
+html {
   font-family: "Noto Sans Nandinagari", sans-serif;
   font-size: 16px;
   overflow-x: hidden;
@@ -17,7 +17,7 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0);
 }
-.App{
+.App {
   display: flex;
   flex-direction: column;
 }

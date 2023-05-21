@@ -1,7 +1,6 @@
 .profileSection {
   width: 13vw;
   height: 7vh;
-  /* border: 1px solid purple; */
   position: relative;
   display: flex;
   border-radius: 15px;
@@ -18,7 +17,6 @@
 .imageContainer {
   width: 29%;
   height: 100%;
-  /* border: 1px solid plum; */
   border-radius: 15px;
 }
 .image {
@@ -32,7 +30,6 @@
 .profileInfo {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid royalblue; */
   width: 50%;
   justify-content: space-evenly;
   padding: 2% 2% 2% 4%;
@@ -49,7 +46,6 @@
   color: #65769c;
 }
 .arrowContainer {
-  /* border:1px solid black; */
   height: 55%;
   display: flex;
   align-items: center;
@@ -164,4 +160,18 @@
 }
 .dropDownListItem:hover::before {
   width: 89%;
+}
+
+@media (max-width: 1100px) {
+  .profileSection {
+    width: 30vw;
+  }
+}
+@media (max-width: 700px) {
+  .profileSection {
+    width: 50vw;
+  }
+  .dropDown {
+    width: 50vw;
+  }
 }
