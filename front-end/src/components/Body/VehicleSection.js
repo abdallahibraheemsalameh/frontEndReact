@@ -1,24 +1,24 @@
 import React from "react";
-import bodySectionOneStyle from "./BodySectionOneStyle.module.css";
+import VehicleSectionStyle from "./VehicleSectionStyle.module.css";
 import ChartsSection from "./ChartsSection"
 import { ReactComponent as SquareMenu } from "../../assets/Body/squareMenu.svg";
 import { ReactComponent as HamburgerMenu } from "../../assets/Body/hamMenu.svg";
 import SmartVehicle from "./SmartVehicle";
-export default function BodySectionOne() {
+export default function VehicleSection() {
   return (
-    <section className={bodySectionOneStyle.bodySectionOne}>
-      <div className={bodySectionOneStyle.vParkContainer}>
-        <div className={bodySectionOneStyle.vParkContainerHeader}>
+    <section className={VehicleSectionStyle.VehicleSection}>
+      <div className={VehicleSectionStyle.vParkContainer}>
+        <div className={VehicleSectionStyle.vParkContainerHeader}>
           <h3>VPark Fleet</h3>
-          <div className={bodySectionOneStyle.vParkContainerHeaderIcons}>
-            <div className={bodySectionOneStyle.SquareMenu}>
+          <div className={VehicleSectionStyle.vParkContainerHeaderIcons}>
+            <div className={VehicleSectionStyle.SquareMenu}>
               <SquareMenu
                 style={{ marginTop: "10px" }}
                 width="40"
                 height="40"
               />
             </div>
-            <div className={bodySectionOneStyle.HamburgerMenu}>
+            <div className={VehicleSectionStyle.HamburgerMenu}>
               <HamburgerMenu
                 style={{ marginTop: "10px" }}
                 width="40"
@@ -28,7 +28,7 @@ export default function BodySectionOne() {
           </div>
         </div>
         {/* ------------------------------- */}
-        <div className={bodySectionOneStyle.SmartVehiclesList}>
+        <div className={VehicleSectionStyle.SmartVehiclesList}>
           <SmartVehicle dotColor="#F9B317" />
           <SmartVehicle dotColor="#00AB80" />
           <SmartVehicle dotColor="#00AB80" />

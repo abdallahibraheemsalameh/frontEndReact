@@ -1,8 +1,9 @@
 import React from "react";
 import bodyStyle from "./BodyStyle.module.css";
 import NavigationSection from "./NavigationSection";
-import BodySectionOne from "./BodySectionOne";
+import VehicleSection from "./VehicleSection";
 import settingsImg from "../../assets/Body/settings.png";
+import MapSection from "./MapSection";
 
 export default function Body() {
   return (
@@ -10,8 +11,7 @@ export default function Body() {
       <NavigationSection />
       <div className={bodyStyle.bodySectionsContainer}>
         <h4>Welcome! John Doe</h4>
-        {/* here new component ⬇ */}
-        <BodySectionOne />
+        <VehicleSection />
         <div className={bodyStyle.settingsDivContiner}>
           <img
             className={bodyStyle.settingsImg}
@@ -31,6 +31,7 @@ export default function Body() {
             </h6>
           </div>
         </div>
+        <MapSection />
       </div>
     </div>
   );

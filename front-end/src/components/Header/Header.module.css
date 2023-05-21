@@ -12,6 +12,11 @@
 }
 .logo_div {
   display: flex;
+  justify-content: center;
+  place-items: center;
+  /* border: 1px solid red; */
+  width: 10%;
+  height: 100%;
 }
 .logo_div_txt {
   text-align: left;

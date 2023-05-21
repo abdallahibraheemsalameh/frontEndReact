@@ -1,4 +1,4 @@
-.bodySectionOne {
+.VehicleSection {
   /* border: 2px solid red; */
   width: 100%;
   height: 41%;
@@ -56,7 +56,7 @@ overflow-y: auto;
   background-color: rgba(0, 0, 0, 0);
 }
 @media screen and (max-width: 768px) {
-  .bodySectionOne {
+  .VehicleSection {
     height:200vh;
     flex-direction: column;
     padding-bottom: 0px;

@@ -1,0 +1,112 @@
+.Container {
+  height: 45%;
+  margin: 2% 2% 2% 2%;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.map {
+  width: 100%;
+  height: 90%;
+  /* border: 1px solid red; */
+  border-radius: 15px;
+  position: relative;
+}
+.dialog {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 1%;
+  width: 30%;
+  height: 85%;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+}
+.bottomBorder {
+  border-bottom: 1px solid #65769c1f;
+  padding-bottom: 2%;
+}
+.row1 div {
+  font-size: 24px;
+  font-weight: bold;
+  color: #65769c;
+}
+.row1 p:last-child {
+  /* font-weight: bold; */
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #65769c8c;
+  padding-top: 1%;
+}
+.row2 {
+  /* border: 1px solid red; */
+  display: flex;
+  height: 22%;
+  padding: 2% 0px 2% 0px;
+}
+.row2Divs {
+  /* border: 1px solid red; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.row2Divs div:first-child {
+  font-size: 24px;
+  font-weight: bold;
+  color: #65769c;
+}
+.row2Divs div:last-child {
+  background: #f6f8fd;
+  width: 90%;
+  padding: 6%;
+  border-radius: 15px;
+  font-size: 20px;
+  color: #65769c;
+  display: flex;
+}
+.row3{
+    display: flex;
+    height: 15%;
+    align-items: center;
+    padding: 0% 2%;
+    justify-content: space-between;
+}
+.row3 div{
+    font-size: 18px;
+    color: #65769c;
+}
+.row4{
+    display: flex;
+    height: 30%;
+    align-items: center;
+    padding: 0% 2%;
+    justify-content: space-evenly;    
+}
+.row4Divs{
+    background: #f6f8fd;
+    width: 31%;
+    height: 90%;
+    border-radius:15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.row5{
+    width:100%;
+    /* border:1px solid red; */
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+

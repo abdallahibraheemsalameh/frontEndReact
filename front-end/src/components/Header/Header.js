@@ -3,7 +3,7 @@ import headerStyle from "./Header.module.css";
 import { ReactComponent as SearchIcon } from "../../assets/Header/icons8-search.svg";
 import { ReactComponent as PlanetEarthIcon } from "../../assets/Header/planet-earth.svg";
 import { ReactComponent as NotificationIcon } from "../../assets/Header/bell1.svg";
-
+import logoImg from "../../assets/Header/logo.png";
 import { useState } from "react";
 import PlanetDropdown from "./DropdownsMenus/PlanetDropdown";
 import NotificationDropdown from "./DropdownsMenus/NotificationDropdown";
@@ -16,7 +16,9 @@ export default function Header() {
     <div className={headerStyle.container}>
       {/* ---------------Logo--------------- */}
       <div className={headerStyle.logo_div}>
-        <span className={headerStyle.logo_div_image}>{"  "}</span>
+        <span className={headerStyle.logo_div_image}>
+          <img style={{height:"100%", width:"80%"}} src={logoImg} alt="logoImage"></img>
+        </span>
         <span className={headerStyle.logo_div_txt}>Logo</span>
       </div>
 
@@ -79,7 +81,7 @@ export default function Header() {
             />
           )}
         </div>
-        <ProfileDropdown/>
+        <ProfileDropdown />
       </div>
     </div>
   );
